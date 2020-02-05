@@ -1,0 +1,38 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  /*padding: 1em;*/
+}
+
+section {
+  padding: 1em 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  text-align: left;
+  
+}
+
+th {
+  padding: 0 0.5em;
+  border-bottom: solid 1px #E8E8E8;
+}
+
+tr {
+  line-height: 1.75;
+}
+
+td {
+  border-right: solid 1px #E8E8E8;
+  text-align: right;
+  padding: 0 0.5em;
+}
+
+.below-freezing {
+  color: steelblue;
+  font-weight: bold;
+}
