@@ -11,7 +11,7 @@ d3.csv("data/commuting_states.csv").then(data => {
     .append("tr")
     .append("th")
     .attr("colspan", "12")
-    .text("Commuting to Work (percent)")
+    .text("Commuting to Work (%)")
       .style("text-align", "left")
       .style("font-size", "18px");
 
@@ -41,15 +41,20 @@ d3.csv("data/commuting_states.csv").then(data => {
     .data(d => Object.values(d))
     .join("td")
     .text(d => d);
-    
-  let minDrove = d3.min(data, function(d) { return d['Drove alone']; });
-  let maxDrove = d3.max(data, function(d) { return d['Drove alone']; });
-  let minCarpool = d3.min(data, function(d) { return +d.Carpooled; });
-  let maxCarpool = d3.max(data, function(d) { return +d.Carpooled; });
+  
+  // tried to turn min and max values in each column a certain color but couldn't figure it out
+  // let minDrove = d3.min(data, function(d) { return d['Drove alone']; });
+  // let maxDrove = d3.max(data, function(d) { return d['Drove alone']; });
+  // let minCarpool = d3.min(data, function(d) { return +d.Carpooled; });
+  // let maxCarpool = d3.max(data, function(d) { return +d.Carpooled; });
 
   rows
     .selectAll("td:not(:first-child)")
-      //.style("color", d => (d <= 10) ? "#808080" : "#de2d26"); // functions: https://www.w3schools.com/js/js_if_else.asp
+    .attr("class", d => +d >= 10 ? "double-digits" : null);
+  //rows
+      //.attr("id", function(d) { return d.State; })
+      //.select("#Georgia"); // https://stackoverflow.com/questions/26730147/how-to-select-individual-rows-in-a-d3-table
+
       // if above average, highlight in red: http://learnjsdata.com/summarize_data.html
       // .style("color", function(d) {
       //   let avgDrove = d3.mean(data, function(d) { return d['Drove alone']; });
@@ -57,12 +62,8 @@ d3.csv("data/commuting_states.csv").then(data => {
       //     return "#de2d26";
       //   }
       //   console.log(avgDrove);
-      .style("color", function(d) {
-        if (d[Array('Drove alone')] === minDrove || d['Drove alone'] === maxDrove) { return "#de2d26";}
-      console.log(maxCarpool);
-    });
-  
-    console.log(data.columns[1]);
+      //.style("color", function(d) {
+      //  if (Object.values(d['Drove alone']) === minDrove) { return "#de2d26";}
 
   rows
     .selectAll("td:last-child")
@@ -77,18 +78,15 @@ d3.csv("data/commuting_states.csv").then(data => {
     d3.mean(data.map(function(d){ return d['Taxi, motorcycle, bike, etc.'] })),
     d3.mean(data.map(function(d){ return d['Worked at home'] }))];
 
-    console.log(totalAvgs);
-
-  totalAvgsRounded = d3.format(".1f")(4.56)
-        table
-        .append("tfoot")
-        .append("tr")
-        .text("Average")
-          .style("text-align", "right")
-          .style("font-weight", "bold")
-        .selectAll("td")
-        .data(totalAvgs)
-        .join("td")
-        .text(d => d);
+   
+  table
+    .append("tfoot")
+    .append("tr")
+    .text("Average")
+      .style("font-weight", "bold")
+    .selectAll("td")
+    .data(totalAvgs)
+    .join("td")
+    .text(d => d3.format(".1f")(d)); // decimal place: https://observablehq.com/@d3/d3-format
 });
 
