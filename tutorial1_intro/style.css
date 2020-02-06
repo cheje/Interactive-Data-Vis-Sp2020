@@ -47,11 +47,16 @@ td {
   width: 100px;
 }
 
-tfoot tr td {
-  text-align: right;
-  background-color: #f2f2f2;
-}
-
 tfoot tr {
   background-color: #f2f2f2;
+  text-align: right;
+  border-top: solid 1px #A9A9A9;
+}
+
+.double-digits {
+  color: #de2d26;
+}
+
+#Georgia {
+  background-color: yellow;
 }
