@@ -2,22 +2,25 @@
   <head>
     <meta charset="utf-8">
     <title>Interactive Data Visualization: Tutorial 2</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>Interactive Data Visualization: Tutorial 2</h1>
-      <h2>Exonerations by Top 15 States</h2>
-      <h3>Individuals Cleared After Wrongful Convictions, 1989-Present</h3>
+      <h2>Interactive Data Visualization: Tutorial 2</h2>
     </header>
-
-    <!-- all we need is an element to select -->
-    <div id="d3-container"> </div>
+      <br />
+      <p class="chart-title">Exonerations by Top 15 States</p>
+      <div>Individuals Cleared After Wrongful Convictions, 1989-Present</div>
+      <div class="caption">Data: <a href="https://www.law.umich.edu/special/exoneration/Pages/browse.aspx" target="_blank">The National Registry of Exonerations</a></div>
+      <br /><div class="subhead">Vertical Bar Chart
+        <div id="d3-vbar"></div>
+      <br />Horizontal Bar Chart
+        <div id="d3-hbar"></div>
 
     <!-- this is the line that loads in d3 -->
     <script src="../../lib/d3.js"></script>
-    <!-- this is the line that loads in the main js script -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

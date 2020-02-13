@@ -14,18 +14,14 @@ p {
   margin:0;
 }
 
-.chart-title {
+p#chart-title {
   font-size: 18px;
   font-weight: bold;
 }
 
-.caption {
+p#caption {
   font-size: 13px;
   font-style: italic;
-}
-
-.subhead {
-  font-weight: 500;
 }
 
 .label {
