@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   padding: 1em;
   margin: 0;
 }
@@ -34,5 +34,6 @@ p {
 }
 
 .axis {
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
 }
