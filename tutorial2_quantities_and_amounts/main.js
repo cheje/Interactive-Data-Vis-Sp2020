@@ -91,48 +91,38 @@ svg
 
 // HORIZONTAL BAR CHART
 
-const hwidth = window.innerWidth * 0.5, // width of svg = half of browser window
+const hwidth = window.innerWidth * 0.5,
   hheight = window.innerHeight / 1.5,
-  hpaddingInner = 0.2, // padding in between bars
+  hpaddingInner = 0.2,
   hmargin = { top: 30, bottom: 100, left: 105, right: 300 };
 
-// scales transform/map data to lengths for bar charts
-
 const hxScale = d3
-  .scaleLinear() // divides up range between domain values: https://observablehq.com/@d3/d3-scaleband
-  //.domain(data.map(d => d.amount)) // state names
-  .domain([0, d3.max(data, d => d.amount)]) // d3.max(data, function) produces domain([0, 366])
-  .range([hmargin.left, hwidth - hmargin.right]); // 10, half of browser width - right margin of svg
+  .scaleLinear()
+  .domain([0, d3.max(data, d => d.amount)])
+  .range([hmargin.left, hwidth - hmargin.right]);
 
 const hyScale = d3
   .scaleBand()
-  //.domain([0, d3.max(data, d => d.state)]) // d3.max(data, function) produces domain([0, 366])
-  .domain(data.map(d => d.state)) // state names
-  .range([hmargin.top, hheight - hmargin.bottom]) // height of svg - range([40, 20])
+  .domain(data.map(d => d.state))
+  .range([hmargin.top, hheight - hmargin.bottom])
   .paddingInner(hpaddingInner);
 
 const hyAxis = d3
   .axisLeft(hyScale)
   .ticks(data.length);
 
-// adding sequential color palette to bars
-// https://www.d3-graph-gallery.com/graph/custom_color.html
-// https://github.com/d3/d3-scale-chromatic
 const hbarColor = d3
   .scaleLinear()
   .domain([d3.min(data, d => d.amount), d3.max(data, d => d.amount)])
   .range(["#fed976", "#f03b20"]);
-// using a palette:
-//const barColor = d3.scaleSequential().domain([d3.min(data, d => d.amount), d3.max(data, d => d.amount)]).interpolator(d3.interpolateYlOrRd);
 
-// svg
 const hsvg = d3
   .select("#d3-hbar")
   .append("svg")
     .attr("width", hwidth)
     .attr("height", hheight);
 
-// append rects
+// bars
 const hrect = hsvg
   .selectAll("rect")
   .data(data)
@@ -151,7 +141,7 @@ const htext = hsvg
   //.attr("class", "label")
     .attr("fill", d => hbarColor(d.amount))
     .attr("x", d => hxScale(d.amount) + 150)
-    .attr("y", d => hyScale(d.state) + (hyScale.bandwidth() / 2.25)) // position text in center on atop bar
+    .attr("y", d => hyScale(d.state) + (hyScale.bandwidth() / 2.25))
   .text(d => d.amount)
     .attr("text-anchor", "middle")
     .attr("dx", "1.5em")
@@ -161,7 +151,7 @@ const htext = hsvg
 hsvg
   .append("g")
     .attr("class", "axis")
-    .attr("transform", `translate(${hmargin.left}, 0)`) // use transform attribute to situate axis right below bars
+    .attr("transform", `translate(${hmargin.left}, 0)`)
   .call(hyAxis)
   .selectAll("text")
     .attr("class", "axis")
