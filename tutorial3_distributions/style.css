@@ -1,0 +1,42 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 1em 3em;
+}
+
+p {
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 13px;
+}
+
+.dot {
+  cursor: pointer;
+}
+
+.dot:hover {
+  opacity: 2.75;
+}
+
+.axis-label {
+  font-size: 14px;
+  fill: black;
+  text-anchor: middle;
+}
+
+#dropdown {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  border-style: solid;
+}

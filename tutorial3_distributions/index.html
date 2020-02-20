@@ -1,11 +1,17 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Interactive Data Visualization Tutorial</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Interactive Data Visualization - Tutorial 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Welcome to Interactive Data Visualization Tutorials
+    <h2>Tutorial 3</h2>
+    <p class="chart-title">Births and Schooling for Girls Around the World</p>
+    <div class="caption">Data source: The World Bank Gender Data Portal (<a href="https://databank.worldbank.org/indicator/SP.ADO.TFRT?id=2ddc971b&report_name=Gender_Indicators_Report&populartype=series#" target="_blank">fertility rate</a>, <a href="https://databank.worldbank.org/indicator/HD.HCI.EYRS.FE?id=2ddc971b&report_name=Gender_Indicators_Report&populartype=series#", target="_blank">expected years of school, female</a>)</div>
+    <br /><label for="dropdown">View countries by region:</label>
+    <select id="dropdown" name="dropdown"></select>
+    <div id="d3-container"> </div>
     <script src="../lib/d3.js"></script>
     <script src="main.js"></script>
   </body>
