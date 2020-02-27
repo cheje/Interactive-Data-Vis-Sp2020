@@ -1,14 +1,22 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Interactive Data Visualization Tutorial</title>
+    <title>Interactive Data Visualization Tutorial: Tutorial 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    Welcome to Interactive Data Visualization Tutorials
-    <label for="dropdown">Filter Selection</label>
+    <h1>Hate Groups in the U.S.</h1>
+    <p><strong>Data source</strong>: <a href="https://www.splcenter.org/hate-map" target="_blank">The Southern Poverty Law Center</a></p>
+
+    <br />
+    <label for="dropdown">Select an Ideology:</label>
     <select id="dropdown" name="dropdown"></select>
+
+    <div id="d3-container"></div>
+
     <script src="../lib/d3.js"></script>
-    <script src="main.js"></script>
+    <script src="./d3-annotation.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

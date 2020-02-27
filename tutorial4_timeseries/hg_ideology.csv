@@ -1,0 +1,260 @@
+Ideology,Year,Number
+Anti-Immigrant,2000,2
+Anti-Immigrant,2001,2
+Anti-Immigrant,2002,3
+Anti-Immigrant,2003,3
+Anti-Immigrant,2004,3
+Anti-Immigrant,2005,5
+Anti-Immigrant,2006,11
+Anti-Immigrant,2007,13
+Anti-Immigrant,2008,9
+Anti-Immigrant,2009,10
+Anti-Immigrant,2010,11
+Anti-Immigrant,2011,9
+Anti-Immigrant,2012,9
+Anti-Immigrant,2013,9
+Anti-Immigrant,2014,9
+Anti-Immigrant,2015,12
+Anti-Immigrant,2016,15
+Anti-Immigrant,2017,22
+Anti-Immigrant,2018,17
+Anti-LGBT,2000,1
+Anti-LGBT,2001,1
+Anti-LGBT,2002,1
+Anti-LGBT,2003,1
+Anti-LGBT,2004,4
+Anti-LGBT,2005,6
+Anti-LGBT,2006,6
+Anti-LGBT,2007,9
+Anti-LGBT,2008,12
+Anti-LGBT,2009,15
+Anti-LGBT,2010,17
+Anti-LGBT,2011,27
+Anti-LGBT,2012,34
+Anti-LGBT,2013,40
+Anti-LGBT,2014,45
+Anti-LGBT,2015,48
+Anti-LGBT,2016,52
+Anti-LGBT,2017,51
+Anti-LGBT,2018,49
+Anti-Muslim,2010,6
+Anti-Muslim,2011,26
+Anti-Muslim,2012,34
+Anti-Muslim,2013,35
+Anti-Muslim,2014,25
+Anti-Muslim,2015,35
+Anti-Muslim,2016,100
+Anti-Muslim,2017,114
+Anti-Muslim,2018,100
+Black Nationalist,2000,48
+Black Nationalist,2001,45
+Black Nationalist,2002,81
+Black Nationalist,2003,136
+Black Nationalist,2004,108
+Black Nationalist,2005,106
+Black Nationalist,2006,88
+Black Nationalist,2007,79
+Black Nationalist,2008,113
+Black Nationalist,2009,121
+Black Nationalist,2010,149
+Black Nationalist,2011,140
+Black Nationalist,2012,151
+Black Nationalist,2013,115
+Black Nationalist,2014,113
+Black Nationalist,2015,180
+Black Nationalist,2016,193
+Black Nationalist,2017,233
+Black Nationalist,2018,264
+Christian Identity,2000,35
+Christian Identity,2001,32
+Christian Identity,2002,30
+Christian Identity,2003,33
+Christian Identity,2004,27
+Christian Identity,2005,35
+Christian Identity,2006,36
+Christian Identity,2007,36
+Christian Identity,2008,39
+Christian Identity,2009,37
+Christian Identity,2010,26
+Christian Identity,2011,55
+Christian Identity,2012,54
+Christian Identity,2013,37
+Christian Identity,2014,21
+Christian Identity,2015,19
+Christian Identity,2016,21
+Christian Identity,2017,20
+Christian Identity,2018,17
+General Hate,2000,27
+General Hate,2001,8
+General Hate,2002,28
+General Hate,2003,29
+General Hate,2004,26
+General Hate,2005,25
+General Hate,2006,25
+General Hate,2007,32
+General Hate,2008,34
+General Hate,2009,41
+General Hate,2010,47
+General Hate,2011,86
+General Hate,2012,83
+General Hate,2013,70
+General Hate,2014,47
+General Hate,2015,52
+General Hate,2016,46
+General Hate,2017,55
+General Hate,2018,127
+Hate Music,2000,2
+Hate Music,2001,3
+Hate Music,2002,6
+Hate Music,2003,7
+Hate Music,2004,10
+Hate Music,2005,13
+Hate Music,2006,17
+Hate Music,2007,15
+Hate Music,2008,14
+Hate Music,2009,14
+Hate Music,2010,16
+Hate Music,2011,16
+Hate Music,2012,12
+Hate Music,2013,9
+Hate Music,2014,11
+Hate Music,2015,10
+Hate Music,2016,16
+Hate Music,2017,15
+Hate Music,2018,15
+Holocaust Denial,2001,1
+Holocaust Denial,2002,2
+Holocaust Denial,2003,3
+Holocaust Denial,2004,3
+Holocaust Denial,2005,4
+Holocaust Denial,2006,5
+Holocaust Denial,2007,7
+Holocaust Denial,2008,7
+Holocaust Denial,2009,7
+Holocaust Denial,2010,8
+Holocaust Denial,2011,9
+Holocaust Denial,2012,9
+Holocaust Denial,2013,11
+Holocaust Denial,2014,11
+Holocaust Denial,2015,11
+Holocaust Denial,2016,10
+Holocaust Denial,2017,10
+Holocaust Denial,2018,8
+Ku Klux Klan,2000,106
+Ku Klux Klan,2001,106
+Ku Klux Klan,2002,128
+Ku Klux Klan,2003,154
+Ku Klux Klan,2004,161
+Ku Klux Klan,2005,177
+Ku Klux Klan,2006,161
+Ku Klux Klan,2007,154
+Ku Klux Klan,2008,185
+Ku Klux Klan,2009,186
+Ku Klux Klan,2010,220
+Ku Klux Klan,2011,151
+Ku Klux Klan,2012,162
+Ku Klux Klan,2013,163
+Ku Klux Klan,2014,72
+Ku Klux Klan,2015,190
+Ku Klux Klan,2016,130
+Ku Klux Klan,2017,72
+Ku Klux Klan,2018,51
+Male Supremacy,2018,2
+Neo-Confederate,2000,85
+Neo-Confederate,2001,122
+Neo-Confederate,2002,90
+Neo-Confederate,2003,89
+Neo-Confederate,2004,96
+Neo-Confederate,2005,97
+Neo-Confederate,2006,100
+Neo-Confederate,2007,102
+Neo-Confederate,2008,93
+Neo-Confederate,2009,68
+Neo-Confederate,2010,42
+Neo-Confederate,2011,32
+Neo-Confederate,2012,30
+Neo-Confederate,2013,36
+Neo-Confederate,2014,37
+Neo-Confederate,2015,35
+Neo-Confederate,2016,43
+Neo-Confederate,2017,31
+Neo-Confederate,2018,36
+Neo-Nazi,2000,186
+Neo-Nazi,2001,213
+Neo-Nazi,2002,223
+Neo-Nazi,2003,157
+Neo-Nazi,2004,168
+Neo-Nazi,2005,166
+Neo-Nazi,2006,196
+Neo-Nazi,2007,211
+Neo-Nazi,2008,196
+Neo-Nazi,2009,161
+Neo-Nazi,2010,170
+Neo-Nazi,2011,169
+Neo-Nazi,2012,136
+Neo-Nazi,2013,141
+Neo-Nazi,2014,141
+Neo-Nazi,2015,90
+Neo-Nazi,2016,100
+Neo-Nazi,2017,121
+Neo-Nazi,2018,112
+Neo-Volkisch,2010,1
+Neo-Volkisch,2011,1
+Neo-Volkisch,2012,4
+Neo-Volkisch,2013,4
+Neo-Volkisch,2014,2
+Neo-Volkisch,2015,11
+Neo-Volkisch,2016,14
+Neo-Volkisch,2017,28
+Racist Skinhead,2000,40
+Racist Skinhead,2001,54
+Racist Skinhead,2002,35
+Racist Skinhead,2003,53
+Racist Skinhead,2004,59
+Racist Skinhead,2005,65
+Racist Skinhead,2006,78
+Racist Skinhead,2007,90
+Racist Skinhead,2008,98
+Racist Skinhead,2009,122
+Racist Skinhead,2010,136
+Racist Skinhead,2011,133
+Racist Skinhead,2012,138
+Racist Skinhead,2013,126
+Racist Skinhead,2014,120
+Racist Skinhead,2015,95
+Racist Skinhead,2016,78
+Racist Skinhead,2017,71
+Racist Skinhead,2018,63
+Radical Traditional Catholicism,2005,1
+Radical Traditional Catholicism,2006,13
+Radical Traditional Catholicism,2007,14
+Radical Traditional Catholicism,2008,14
+Radical Traditional Catholicism,2009,16
+Radical Traditional Catholicism,2010,17
+Radical Traditional Catholicism,2011,17
+Radical Traditional Catholicism,2012,17
+Radical Traditional Catholicism,2013,17
+Radical Traditional Catholicism,2014,17
+Radical Traditional Catholicism,2015,17
+Radical Traditional Catholicism,2016,14
+Radical Traditional Catholicism,2017,11
+Radical Traditional Catholicism,2018,11
+White Nationalist,2000,67
+White Nationalist,2001,80
+White Nationalist,2002,78
+White Nationalist,2003,84
+White Nationalist,2004,96
+White Nationalist,2005,101
+White Nationalist,2006,105
+White Nationalist,2007,122
+White Nationalist,2008,112
+White Nationalist,2009,134
+White Nationalist,2010,136
+White Nationalist,2011,147
+White Nationalist,2012,134
+White Nationalist,2013,126
+White Nationalist,2014,113
+White Nationalist,2015,87
+White Nationalist,2016,85
+White Nationalist,2017,100
+White Nationalist,2018,148

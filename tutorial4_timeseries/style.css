@@ -1,0 +1,70 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  padding: 1em 3em;
+}
+
+h1 {
+  margin-bottom: 3px;
+}
+
+p {
+  margin: 0;
+}
+
+a:link, a:visited {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 13px;
+}
+
+.dot {
+  cursor: pointer;
+  fill: #fff;
+  stroke: #191970;
+  stroke-width: 2;
+  opacity: 1;
+}
+
+.dot:hover {
+  fill: #6495ED;
+}
+
+/* axis tick marks */
+.axis {
+  font-size: 11px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.axis-label {
+  font-size: 14px;
+  fill: black;
+  text-anchor: middle;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+#dropdown {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+  border-style: solid;
+}
+
+.trend {
+  fill: none;
+  stroke: #DC143C;
+  stroke-width: 3;
+}
+
+.area {
+  fill: #FFE6E6;
+  fill-opacity: 0.25;
+  /*fill: #F0F8FF;*/
+}
