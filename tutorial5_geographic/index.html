@@ -1,13 +1,20 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Interactive Data Visualization Tutorial</title>
+    <title>Interactive Data Visualization | Tutorial 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    Welcome to Interactive Data Visualization Tutorials
+    <h1>High School Enrollment in NYC</h1>
+    <p><strong>Data</strong>: <a href="https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas-NTA-/cpf4-rkhq" target="_blank">Neighborhood Tabulation Areas</a> (GeoJSON), <a href="https://data.cityofnewyork.us/Education/2020-DOE-High-School-Directory/23z9-6uk9" target="_blank">2020 DOE High School Directory</a> (CSV)</p>
+    <br />
+
+    <div id="hover-content"></div>
     <div id="d3-container"> </div>
+
     <script src="../lib/d3.js"></script>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   </body>
 </html>
