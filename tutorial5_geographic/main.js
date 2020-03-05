@@ -17,11 +17,11 @@ let svg;
    geojson: null,
    schools: null,
    hover: {
-     "Neighborhood (NTA)": null,
-     Borough: null,
      "High School": null,
      Grades: null,
      "Number of Students": null,
+     "Neighborhood (NTA)": null,
+     Borough: null,
      Latitude: null,
      Longitude: null,
    },
