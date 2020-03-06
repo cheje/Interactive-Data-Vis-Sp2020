@@ -57,7 +57,7 @@ function init() {
   // + SET UP PROJECTION
   // + SET UP GEOPATH
   const projection = d3
-    .geoAlbersUsa()
+    .geoMercator()
     .fitSize([width, height], state.geojson);
   const path = d3
     .geoPath()
