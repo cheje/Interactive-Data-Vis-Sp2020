@@ -48,7 +48,7 @@ function init() {
   // const colorScale = d3
   //   .scaleOrdinal()
   //   .domain(uniqueRegions)
-  //   .range(d3.schemeDark2);
+  //   .range(d3.schemeAccent);
 
   const colorScale = d3.scaleSequential([5, 0], d3.interpolateMagma);
 
@@ -90,8 +90,8 @@ function init() {
   node
     .append("circle")
     .attr("r", d => d.r)
-    .attr("fill-opacity", 0.6)
-    .attr("fill", d => colorScale(d.height)) // take the genre from the first one in the group
+    .attr("fill-opacity", 0.9)
+    .attr("fill", d => colorScale(d.height))
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
     .on("mouseover", d => {
@@ -102,7 +102,6 @@ function init() {
           d.x + 50,
           d.y - 50,
         ],
-        //name: d.data.typeOfDeath,
         value: d.value,
         hierarchy: `${d
           .ancestors()

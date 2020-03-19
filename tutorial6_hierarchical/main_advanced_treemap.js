@@ -86,7 +86,7 @@ function init() {
   leaf
     .append("rect")
     .attr("fill-opacity", 0.6)
-    .attr("fill", d => colorScale(d.data[1].journalists[0].region)) // take the genre from the first one in the group
+    .attr("fill", d => colorScale(d.data[1].journalists[0].region))
     .attr("width", d => d.x1 - d.x0)
     .attr("height", d => d.y1 - d.y0)
     .on("mouseover", d => {
