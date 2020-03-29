@@ -1,6 +1,11 @@
 lib/.DS_Store
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 =======
 .DS_Store
+>>>>>>> upstream/master
+=======
+.DS_Store
+.vscode
 >>>>>>> upstream/master
